@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\newlength{\margin}
+\setlength{\margin}{25mm}
+% Height of the header
+\newlength{\hdrheight}
+\setlength{\hdrheight}{20mm}
+
+\usepackage[utf8]{inputenc}
+\usepackage{wrapfig}
+\usepackage{graphicx}
+\usepackage{ragged2e}
+\usepackage[table]{xcolor}
+\usepackage{tabu}
+\usepackage{tikz}
+\usepackage{multicol}
+
+\RequirePackage{fontawesome} 
+
+\usepackage[margin= \margin]{geometry} 
+
+\definecolor{mypink1}{RGB}{30, 176, 143}
+\definecolor{mypink2}{RGB}{234, 243, 238}
+
+\setlength{\columnseprule}{1pt}
+\def\columnseprulecolor{\color{mypink1}}
+ 
+\begin{document}
+
+
+\begin{tikzpicture}[remember picture, overlay]
+    % Colored bar on top of the page
+    \node [below right, fill=mypink1, minimum height=\hdrheight, minimum width=\paperwidth, outer sep=0] (name) at (current page.north west) {};
+
+\end{tikzpicture}
+
+
+\begin{wrapfigure}{r}{0.25\textwidth} %this figure will be at the right
+    \centering
+    \includegraphics[width=3.5cm, height=3.8cm]{sid_2.jpg}
+\end{wrapfigure}
+\hspace{0.5cm}\\[-0.2cm]
+
+\textbf{Sidhartha Sankar Prusti} \\
+\indent MIG-150 \\
+\indent Kalinga Vihar K(9)-A  \\
+\indent Patrapada\\
+\indent Bhubaneswar (ODISHA, INDIA) - 751019\\
+\indent \faEnvelope \hspace{5pt}\textbf{sidharthaprusti.84@gmail.com} \\
+\indent \faMobile \hspace{5pt}\textbf{7504609374} \\
+\indent \faMobilePhone$_2$ \hspace{5pt}\textbf{9938990245} \\
+
+
+\end{document}
